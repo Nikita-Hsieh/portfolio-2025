@@ -32,7 +32,7 @@ export default function Intro() {
 				</div>
 			</div>
 
-			<motion.p
+			<motion.h1
 				className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
@@ -41,17 +41,17 @@ export default function Intro() {
 				<span className="font-normal">
 					I'm a frontend developer & UX/UI designer
 				</span>
-			</motion.p>
+			</motion.h1>
 
 			<motion.div
-				className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-normal"
+				className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-normal"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ delay: 0.1 }}
 			>
 				<Link
 					href="#projects"
-					className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+					className="group text-sm font-medium bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
 				>
 					View Projects{' '}
 					<BsArrowDown className="opacity-70 group-hover:translate-y-1 transition" />
@@ -59,7 +59,7 @@ export default function Intro() {
 				<a
 					href="/resume.pdf"
 					download
-					className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+					className="group text-sm font-medium bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
 				>
 					Download CV{' '}
 					<HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
