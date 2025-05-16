@@ -5,7 +5,7 @@ import { projectsData } from '@/lib/data'
 
 export default function Projects() {
 	return (
-		<section className="py-10">
+		<section className="py-10 scroll-my-28" id="projects">
 			<SectionHeading>Selected Projects</SectionHeading>
 			<div>
 				{projectsData.map((project, index) => (
