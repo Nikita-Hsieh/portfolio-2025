@@ -1,18 +1,33 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import Profile from '@/public/profile.png'
 import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useActiveSectionContext } from '@/context/active-section-context'
 
 export default function About() {
+	//section portion to active header link
+	const { ref, inView } = useInView({
+		threshold: 0.75,
+	})
+	const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
+
+	useEffect(() => {
+		if (inView && Date.now() - timeOfLastClick > 1000) {
+			setActiveSection('About')
+		}
+	}, [inView, setActiveSection, timeOfLastClick])
+
 	return (
 		<motion.section
+			ref={ref}
+			id="about"
 			className="mb-28 max-w-[60rem] text-center leading-8 sm:mb-40 scroll-mt-28"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.17 }}
-			id="about"
 		>
 			<SectionHeading>About Me</SectionHeading>
 			<div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
