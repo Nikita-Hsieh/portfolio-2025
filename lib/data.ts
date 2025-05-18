@@ -35,28 +35,65 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: 'Graduated bootcamp',
-		location: 'Miami, FL',
+		title: 'Graphic Design',
+		location: 'DeAnza College',
 		description:
-			'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+			'Graphic Design and Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign, etc.)',
+		icon: React.createElement(LuGraduationCap),
+		date: '2015 - 2017',
+	},
+	{
+		title: 'Visual Arts - Interdiscip. Computer & Art',
+		location: 'University of California - San Diego',
+		description:
+			'The cross-disciplinary background allows me to approach design and development with both creative insight and technical precision.',
 		icon: React.createElement(LuGraduationCap),
 		date: '2019',
 	},
 	{
-		title: 'Front-End Developer',
-		location: 'Orlando, FL',
+		title: 'UI/UX Designer',
+		location: 'HunchTech',
 		description:
-			'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+			'Skilled in UI/UX design, game design, website creation using Wix, English copywriting, and integrating backend services with Google Firebase.',
 		icon: React.createElement(CgWorkAlt),
-		date: '2019 - 2021',
+		date: '2019 - 2020',
 	},
 	{
-		title: 'Full-Stack Developer',
-		location: 'Houston, TX',
+		title: 'UI/UX Designer',
+		location: 'NADI System Corp.',
+		description: [
+			'Applied user-centered design to projects across smart factory, smart building, and telecom sectors.',
+			'Specialized in data visualization, interaction design, and Unity-based prototyping.',
+			'Tools & Technologies: Figma, Unity, data dashboards, cross-functional team collaboration.',
+			'Key Projects:',
+			'• FarEasTone 5G (telecom)',
+			'• Foxconn Wisconsin Smart Factory',
+			'• Giant Smart HQ',
+			'• Cathay United Bank Data Center',
+			'• Delta Smart Building (Shanghai)',
+		],
+
+		icon: React.createElement(CgWorkAlt),
+		date: '2020 - 2021',
+	},
+	{
+		title: 'UI/UX Designer',
+		location: 'RogersAI',
+		description: [
+			'Designed and optimized UI/UX for internal tools and AI interfaces, developed interactive prototypes, conducted usability testing, and planned information architecture and backend workflows. Contributed to improving system models and building scalable interface components.',
+		],
+
+		icon: React.createElement(CgWorkAlt),
+		date: '2021 - 2023',
+	},
+
+	{
+		title: 'UI/UX & Frontend Developer',
+		location: 'WoWorld',
 		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+			'Developed reusable frontend modules and implemented responsive layouts to support scalable e-commerce workflows. Also contributed to UI/UX design and interface optimization to enhance user experience across the platform.',
 		icon: React.createElement(FaReact),
-		date: '2021 - present',
+		date: '2024 - 2025',
 	},
 ] as const
 
@@ -85,23 +122,37 @@ export const projectsData = [
 ]
 
 export const skillsData = [
+	// Frontend
 	'HTML',
 	'CSS',
 	'JavaScript',
-	'TypeScript',
+	'Vue3',
 	'React',
-	'Next.js',
-	'Node.js',
-	'Git',
+	'Quasar',
 	'Tailwind',
-	'Prisma',
-	'MongoDB',
-	'Redux',
-	'GraphQL',
-	'Apollo',
-	'Express',
-	'PostgreSQL',
-	'Python',
-	'Django',
 	'Framer Motion',
+	'Scss',
+	'style-component',
+	'gsap',
+	'firebase',
+	'Unity',
+	'git',
+
+	// UI/Ux
+	'Figma',
+	'Wix',
+	'Whimsical',
+	'Photoshlp',
+	'Draw.io',
+	'Sketch',
+	'Zepline',
+	'Miro',
+
+	// Other
+	'Trello',
+	'Jira',
+	'GraphQL',
+
+	// Tools
+	'Git',
 ] as const
