@@ -1,22 +1,30 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { useActiveSectionContext } from '@/context/active-section-context'
 import type { SectionName } from './types'
 
-type useSectionInViewProps = { sectionName: SectionName }
-
 export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
-	//section portion to active header link
 	const { ref, inView } = useInView({
 		threshold,
+		triggerOnce: false,
+		initialInView: false,
 	})
+
 	const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
+	const [hasMounted, setHasMounted] = useState(false)
 
 	useEffect(() => {
-		if (inView && Date.now() - timeOfLastClick > 1000) {
+		setHasMounted(true)
+	}, [])
+
+	useEffect(() => {
+		if (!hasMounted) return
+
+		const now = Date.now()
+		if (inView && now - timeOfLastClick > 1000) {
 			setActiveSection(sectionName)
 		}
-	}, [inView, setActiveSection, timeOfLastClick, sectionName])
+	}, [inView, hasMounted, setActiveSection, timeOfLastClick, sectionName])
 
 	return { ref }
 }
