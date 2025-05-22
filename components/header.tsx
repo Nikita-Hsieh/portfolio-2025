@@ -5,7 +5,7 @@ import { links } from '@/lib/data'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { useActiveSectionContext } from '@/context/active-section-context'
-import { RiEnglishInput, RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import { BsMoon, BsSun } from 'react-icons/bs'
 import { useTheme } from '@/context/theme-context'
 
@@ -15,12 +15,17 @@ export default function Header() {
 	const { theme, toggleTheme } = useTheme()
 	const [menuOpen, setMenuOpen] = useState(false)
 
+	const [language, setLanguage] = useState<'en' | 'zh'>('en')
+	const toggleLanguage = () => {
+		setLanguage((prev) => (prev === 'en' ? 'zh' : 'en'))
+	}
+
 	return (
 		<header className="z-[999] relative">
 			<motion.div
 				className="fixed top-4 left-1/2 -translate-x-1/2 h-[3.25rem] w-[90%] max-w-[1200px]
   rounded-xl border border-white border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] 
-  backdrop-blur-[0.5rem] dark:bg-gray-900 dark:border-black/40 dark:bg-opacity-75"
+  backdrop-blur-[0.5rem] dark:bg-gray-900 dark:border-none dark:bg-opacity-75"
 				initial={{ y: -100, x: '-50%', opacity: 0 }}
 				animate={{ y: 0, x: '-50%', opacity: 1 }}
 			/>
@@ -42,7 +47,7 @@ export default function Header() {
 					{links.map((link) => (
 						<motion.li
 							key={link.hash}
-							className="h-3/4 flex items-center justify-center relative"
+							className="h-3/4 relative flex items-center justify-center relative"
 							initial={{ y: -100, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
 						>
@@ -63,8 +68,7 @@ export default function Header() {
 								{link.name}
 								{link.name === activeSection && (
 									<motion.span
-										className="absolute left-1/2 top-0 -translate-x-1/2 h-full w-[160px] rounded-full 
-								bg-gray-100 bg-opacity-80 dark:bg-gray-700 dark:bg-opacity-10 -z-10"
+										className="absolute inset-0 z-[-1] rounded-md bg-gray-200/70 dark:bg-gray-700/40"
 										layoutId="activeSection"
 										transition={{ type: 'spring', stiffness: 380, damping: 30 }}
 									/>
@@ -77,10 +81,12 @@ export default function Header() {
 				<div className="flex items-center gap-3 text-xl text-gray-600">
 					<button
 						aria-label="Toggle Language"
-						className="hover:text-gray-950 transition"
+						onClick={toggleLanguage}
+						className="hover:text-gray-950 transition dark:hover:text-white"
 					>
-						<RiEnglishInput />
+						{language === 'en' ? 'EN' : '中'}
 					</button>
+
 					<button
 						aria-label="Toggle Theme"
 						onClick={toggleTheme}
