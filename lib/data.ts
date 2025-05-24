@@ -6,119 +6,58 @@ import filmApp from '@/public/film-app.png'
 import nexter from '@/public/nexter.png'
 import calculator from '@/public/calculator.png'
 
-export const links = [
-	{
-		name: 'Home',
-		hash: '#home',
-	},
-	{
-		name: 'About',
-		hash: '#about',
-	},
-	{
-		name: 'Experience',
-		hash: '#experience',
-	},
-	{
-		name: 'Skills',
-		hash: '#skills',
-	},
-	{
-		name: 'Projects',
-		hash: '#projects',
-	},
-] as const
-
 export const experiencesData = [
 	{
-		title: 'Graphic Design',
-		location: 'DeAnza College',
-		description:
-			'Graphic Design and Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign, etc.)',
-		icon: React.createElement(LuGraduationCap),
+		id: 'graphicDesign',
 		date: '2015 - 2017',
-	},
-	{
-		title: 'Visual Arts - Interdiscip. Computer & Art',
-		location: 'University of California - San Diego',
-		description:
-			'The cross-disciplinary background allows me to approach design and development with both creative insight and technical precision.',
 		icon: React.createElement(LuGraduationCap),
+	},
+	{
+		id: 'ucsdVisualArt',
 		date: '2019',
+		icon: React.createElement(LuGraduationCap),
 	},
 	{
-		title: 'UI/UX Designer',
-		location: 'HunchTech',
-		description:
-			'Skilled in UI/UX design, game design, website creation using Wix, English copywriting, and integrating backend services with Google Firebase.',
-		icon: React.createElement(CgWorkAlt),
+		id: 'hunchTech',
 		date: '2019 - 2020',
+		icon: React.createElement(CgWorkAlt),
 	},
 	{
-		title: 'UI/UX Designer',
-		location: 'NADI System Corp.',
-		description: [
-			'Applied user-centered design to projects across smart factory, smart building, and telecom sectors.',
-			'Specialized in data visualization, interaction design, and Unity-based prototyping.',
-			'Tools & Technologies: Figma, Unity, data dashboards, cross-functional team collaboration.',
-			'Key Projects:',
-			'• FarEasTone 5G (telecom)',
-			'• Foxconn Wisconsin Smart Factory',
-			'• Giant Smart HQ',
-			'• Cathay United Bank Data Center',
-			'• Delta Smart Building (Shanghai)',
-		],
-
-		icon: React.createElement(CgWorkAlt),
+		id: 'nadiSystem',
 		date: '2020 - 2021',
-	},
-	{
-		title: 'UI/UX Designer',
-		location: 'RogersAI',
-		description: [
-			'Designed and optimized UI/UX for internal tools and AI interfaces, developed interactive prototypes, conducted usability testing, and planned information architecture and backend workflows. Contributed to improving system models and building scalable interface components.',
-		],
-
 		icon: React.createElement(CgWorkAlt),
-		date: '2021 - 2023',
 	},
-
 	{
-		title: 'UI/UX & Frontend Developer',
-		location: 'WoWorld',
-		description:
-			'Developed reusable frontend modules and implemented responsive layouts to support scalable e-commerce workflows. Also contributed to UI/UX design and interface optimization to enhance user experience across the platform.',
-		icon: React.createElement(FaReact),
+		id: 'rogersAI',
+		date: '2021 - 2023',
+		icon: React.createElement(CgWorkAlt),
+	},
+	{
+		id: 'woWorld',
 		date: '2024 - 2025',
+		icon: React.createElement(FaReact),
 	},
 ] as const
 
 export const projectsData = [
 	{
-		title: 'CorpComment',
-		description:
-			'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-		tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
+		id: 'corpComment',
 		imageUrl: filmApp,
+		tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
 	},
 	{
-		title: 'rmtDev',
-		description:
-			'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
+		id: 'rmtDev',
 		imageUrl: nexter,
+		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
 	},
 	{
-		title: 'Word Analytics',
-		description:
-			'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-		tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
+		id: 'wordAnalytics',
 		imageUrl: calculator,
+		tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
 	},
 ]
 
 export const skillsData = [
-	// Frontend
 	'HTML',
 	'CSS',
 	'JavaScript',
@@ -133,22 +72,15 @@ export const skillsData = [
 	'firebase',
 	'Unity',
 	'git',
-
-	// UI/Ux
 	'Figma',
 	'Wix',
 	'Whimsical',
-	'Photoshlp',
+	'Photoshop',
 	'Draw.io',
 	'Sketch',
-	'Zepline',
+	'Zeplin',
 	'Miro',
-
-	// Other
 	'Trello',
 	'Jira',
 	'GraphQL',
-
-	// Tools
-	'Git',
 ] as const

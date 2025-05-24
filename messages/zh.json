@@ -1,0 +1,89 @@
+{
+	"nav": {
+		"home": "首頁",
+		"about": "關於我",
+		"experience": "經歷",
+		"skills": "技能",
+		"projects": "作品"
+	},
+	"about": {
+		"title": "關於我",
+		"description": "我是一名前端開發者與設計師，來自台灣，擁有視覺藝術與 UI/UX 背景，專注於打造互動且美觀的網頁體驗。"
+	},
+	"skills": {
+		"title": "技能",
+		"list": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Vue3",
+			"React",
+			"Quasar",
+			"Tailwind",
+			"Framer Motion",
+			"Scss",
+			"styled-components",
+			"gsap",
+			"Firebase",
+			"Unity",
+			"Git",
+			"Figma",
+			"Wix",
+			"Whimsical",
+			"Photoshop",
+			"Draw.io",
+			"Sketch",
+			"Zeplin",
+			"Miro",
+			"Trello",
+			"Jira",
+			"GraphQL"
+		]
+	},
+	"experience": {
+		"graphicDesign": {
+			"title": "平面設計",
+			"location": "DeAnza 學院",
+			"description": "主修平面設計，熟悉 Adobe 系列軟體（Photoshop、Illustrator、InDesign）。"
+		},
+		"ucsdVisualArt": {
+			"title": "視覺藝術 - 跨領域",
+			"location": "加州大學聖地牙哥分校",
+			"description": "結合藝術與科技，將創意與邏輯融合於設計之中。"
+		},
+		"hunchTech": {
+			"title": "UI/UX 設計師",
+			"location": "HunchTech",
+			"description": "負責 UI/UX 設計、遊戲介面設計、Wix 網站製作與 Firebase 串接。"
+		},
+		"nadiSystem": {
+			"title": "UI/UX 設計師",
+			"location": "能達科技",
+			"description": "負責智慧工廠、智慧建築與電信相關專案介面設計，熟悉 Unity、Figma 與資料視覺化。"
+		},
+		"rogersAI": {
+			"title": "UI/UX 設計師",
+			"location": "RogersAI",
+			"description": "設計內部工具與 AI 介面，進行使用者測試與互動原型開發。"
+		},
+		"woWorld": {
+			"title": "UI/UX 與前端開發",
+			"location": "WoWorld",
+			"description": "開發響應式前端模組，優化電商平台介面與使用體驗。"
+		}
+	},
+	"projects": {
+		"corpComment": {
+			"title": "CorpComment",
+			"description": "一個全端開發的企業評價平台，用戶可公開發表對公司的評價。"
+		},
+		"rmtDev": {
+			"title": "rmtDev",
+			"description": "一個遠端工程職缺看板，具備篩選、排序與分頁功能。"
+		},
+		"wordAnalytics": {
+			"title": "字數分析工具",
+			"description": "快速分析文字字數、字元數與社群貼文上限的應用工具。"
+		}
+	}
+}

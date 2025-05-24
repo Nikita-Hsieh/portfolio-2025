@@ -1,0 +1,89 @@
+{
+	"nav": {
+		"home": "Home",
+		"about": "About",
+		"experience": "Experience",
+		"skills": "Skills",
+		"projects": "Projects"
+	},
+	"about": {
+		"title": "About Me",
+		"description": "I’m a front-end developer and designer based in Taiwan. With a background in visual arts and UI/UX, I build interactive and aesthetic web experiences."
+	},
+	"skills": {
+		"title": "Skills",
+		"list": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Vue3",
+			"React",
+			"Quasar",
+			"Tailwind",
+			"Framer Motion",
+			"Scss",
+			"styled-components",
+			"gsap",
+			"Firebase",
+			"Unity",
+			"Git",
+			"Figma",
+			"Wix",
+			"Whimsical",
+			"Photoshop",
+			"Draw.io",
+			"Sketch",
+			"Zeplin",
+			"Miro",
+			"Trello",
+			"Jira",
+			"GraphQL"
+		]
+	},
+	"experience": {
+		"graphicDesign": {
+			"title": "Graphic Design",
+			"location": "DeAnza College",
+			"description": "Studied graphic design and became proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign)."
+		},
+		"ucsdVisualArt": {
+			"title": "Visual Arts - Interdisciplinary",
+			"location": "UC San Diego",
+			"description": "Blended art and technology to approach design with creativity and precision."
+		},
+		"hunchTech": {
+			"title": "UI/UX Designer",
+			"location": "HunchTech",
+			"description": "Worked on UI/UX design, game interfaces, web creation with Wix, and Firebase integration."
+		},
+		"nadiSystem": {
+			"title": "UI/UX Designer",
+			"location": "NADI System Corp.",
+			"description": "Led smart factory, smart building, and telecom UI projects with Unity, Figma, and data dashboards."
+		},
+		"rogersAI": {
+			"title": "UI/UX Designer",
+			"location": "RogersAI",
+			"description": "Designed internal tools and AI interfaces, ran usability testing and prototyped user flows."
+		},
+		"woWorld": {
+			"title": "UI/UX & Frontend Developer",
+			"location": "WoWorld",
+			"description": "Developed responsive frontend modules and contributed to UI/UX improvements in e-commerce workflows."
+		}
+	},
+	"projects": {
+		"corpComment": {
+			"title": "CorpComment",
+			"description": "A full-stack feedback platform where users can rate and review companies publicly."
+		},
+		"rmtDev": {
+			"title": "rmtDev",
+			"description": "A job board for remote developers with filters, sorting, and pagination."
+		},
+		"wordAnalytics": {
+			"title": "Word Analytics",
+			"description": "A web app that analyzes text for word count, character count, and social post limits."
+		}
+	}
+}
