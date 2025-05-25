@@ -2,9 +2,11 @@ import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
-import filmApp from '@/public/film-app.png'
-import nexter from '@/public/nexter.png'
-import calculator from '@/public/calculator.png'
+import invoiceImage from '@/public/invoice-app.png'
+import jsModuleImage from '@/public/js-module.png'
+import saasImage from '@/public/saas-app.png'
+import shopImage from '@/public/shop-app.png'
+import filmImage from '@/public/film-app.png'
 
 export const experiencesData = [
 	{
@@ -39,48 +41,72 @@ export const experiencesData = [
 	},
 ] as const
 
+export const skillsGrouped = [
+	{
+		category: 'Frontend',
+		items: [
+			'HTML',
+			'CSS',
+			'JavaScript',
+			'Vue3',
+			'React',
+			'Quasar',
+			'Tailwind',
+			'Framer Motion',
+			'GSAP',
+			'SCSS',
+			'style-component',
+			'Unity',
+		],
+	},
+	{
+		category: 'Tools',
+		items: ['Git', 'Vercel', 'Firebase', 'Jira', 'Trello'],
+	},
+	{
+		category: 'Design',
+		items: [
+			'Figma',
+			'Whimsical',
+			'Photoshop',
+			'Sketch',
+			'Zeplin',
+			'Draw.io',
+			'Miro',
+			'Wix',
+		],
+	},
+] as const
+
 export const projectsData = [
 	{
-		id: 'corpComment',
-		imageUrl: filmApp,
-		tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
+		id: 'invoice',
+		imageUrl: invoiceImage,
+		demoUrl: 'https://nikita-hsieh.github.io/invoice-app/#/',
+		tags: ['Vue 3', 'Firebase', 'Vuex', 'SCSS'],
 	},
 	{
-		id: 'rmtDev',
-		imageUrl: nexter,
-		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
+		id: 'jsModule',
+		imageUrl: jsModuleImage,
+		demoUrl: 'https://nikita-hsieh.github.io/Practice-JS-Module/',
+		tags: ['JavaScript', 'Modules', 'DOM'],
 	},
 	{
-		id: 'wordAnalytics',
-		imageUrl: calculator,
-		tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
+		id: 'saas',
+		imageUrl: saasImage,
+		demoUrl: 'https://saas-landing-page-project.vercel.app/',
+		tags: ['Next.js', 'Tailwind', 'Framer Motion', 'i18n'],
+	},
+	{
+		id: 'shop',
+		imageUrl: shopImage,
+		demoUrl: 'https://nikita-hsieh.github.io/shop-products/',
+		tags: ['JavaScript', 'Cart', 'Toast', 'Sidebar'],
+	},
+	{
+		id: 'film',
+		imageUrl: filmImage,
+		demoUrl: 'https://nikita-hsieh.github.io/practice-film-app/index.html',
+		tags: ['JavaScript', 'API', 'Slider'],
 	},
 ]
-
-export const skillsData = [
-	'HTML',
-	'CSS',
-	'JavaScript',
-	'Vue3',
-	'React',
-	'Quasar',
-	'Tailwind',
-	'Framer Motion',
-	'Scss',
-	'style-component',
-	'gsap',
-	'firebase',
-	'Unity',
-	'git',
-	'Figma',
-	'Wix',
-	'Whimsical',
-	'Photoshop',
-	'Draw.io',
-	'Sketch',
-	'Zeplin',
-	'Miro',
-	'Trello',
-	'Jira',
-	'GraphQL',
-] as const

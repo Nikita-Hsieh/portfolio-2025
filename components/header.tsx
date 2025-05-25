@@ -32,11 +32,9 @@ export default function Header() {
 	return (
 		<header className="z-[999] relative">
 			<motion.div
-				className="fixed top-4 left-1/2 -translate-x-1/2 h-[3.25rem] w-[90%] max-w-[1200px] 
-				rounded-full border border-white border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] 
-				backdrop-blur-[0.5rem] dark:bg-gray-900 dark:border-none dark:bg-opacity-75"
-				initial={{ y: -100, x: '-50%', opacity: 0 }}
-				animate={{ y: 0, x: '-50%', opacity: 1 }}
+				className="fixed top-4 left-1/2 -translate-x-1/2 h-[3.25rem] w-[90%] max-w-[1200px]
+  rounded-full border border-white border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] 
+  backdrop-blur-[0.5rem] dark:bg-gray-900 dark:border-none dark:bg-opacity-75"
 			/>
 
 			<nav className="fixed top-4 left-1/2 -translate-x-1/2 h-[3.25rem] w-[90%] max-w-[1200px] flex items-center justify-between px-4">
@@ -57,8 +55,6 @@ export default function Header() {
 						<motion.li
 							key={link.hash}
 							className="h-3/4 w-[96px] relative flex items-center justify-center"
-							initial={{ y: -100, opacity: 0 }}
-							animate={{ y: 0, opacity: 1 }}
 						>
 							<Link
 								href={link.hash}
@@ -140,9 +136,6 @@ export default function Header() {
 								<motion.li
 									key={link.hash}
 									className="relative w-full text-center"
-									initial={{ opacity: 0, y: -10 }}
-									animate={{ opacity: 1, y: 0 }}
-									exit={{ opacity: 0, y: -10 }}
 								>
 									<Link
 										href={link.hash}

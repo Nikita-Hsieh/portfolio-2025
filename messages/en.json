@@ -6,9 +6,16 @@
 		"skills": "Skills",
 		"projects": "Projects"
 	},
+	"intro": {
+		"title": "Hi, I'm Nikita.",
+		"subtitle": "I am a",
+		"animated": ["Frontend Developer", "UX/UI Designer"]
+	},
 	"about": {
 		"title": "About Me",
-		"description": "I’m a front-end developer and designer based in Taiwan. With a background in visual arts and UI/UX, I build interactive and aesthetic web experiences."
+		"paragraph1": "I'm a frontend engineer and UX/UI designer with experience in design and product development. I specialize in building responsive interfaces and scalable component systems that transform design concepts into interactive digital experiences.",
+		"paragraph2": "I'm proficient in HTML, CSS, and JavaScript, and actively contribute to frontend development workflows. I have hands-on experience with React and Vue, as well as styling tools like Sass, Tailwind, styled-components, GSAP, and Quasar. I'm also familiar with API integration and Git version control.",
+		"paragraph3": "With a background in design, I approach development from a user-centered perspective—ensuring visual consistency and intuitive experience logic. I enjoy exploring new technologies and best practices, continuously improving my frontend skills and bridging the gap between design and development. My work spans across e-commerce platforms, large-scale applications, and cross-functional team collaborations."
 	},
 	"skills": {
 		"title": "Skills",
@@ -73,17 +80,25 @@
 		}
 	},
 	"projects": {
-		"corpComment": {
-			"title": "CorpComment",
-			"description": "A full-stack feedback platform where users can rate and review companies publicly."
+		"invoice": {
+			"title": "Invoice Management App",
+			"description": "A Vue 3 SPA with Firebase. Create, edit, and delete invoice records with persistent sync."
 		},
-		"rmtDev": {
-			"title": "rmtDev",
-			"description": "A job board for remote developers with filters, sorting, and pagination."
+		"jsModule": {
+			"title": "JS Module Practice",
+			"description": "Practice JavaScript modules, array methods, and DOM operations in a modular project."
 		},
-		"wordAnalytics": {
-			"title": "Word Analytics",
-			"description": "A web app that analyzes text for word count, character count, and social post limits."
+		"saas": {
+			"title": "SaaS Landing Page",
+			"description": "A modern SaaS landing page with animation, dark mode, and language toggle."
+		},
+		"shop": {
+			"title": "Shop Products UI",
+			"description": "Shopping interface with cart, sidebar quantity control, and toast confirmation after checkout."
+		},
+		"film": {
+			"title": "Film Explorer",
+			"description": "A responsive movie search app using OMDb API and a dynamic slider layout."
 		}
 	}
 }

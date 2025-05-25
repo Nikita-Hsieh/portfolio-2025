@@ -1,13 +1,19 @@
 'use client'
-import React from 'react'
+
+import { useSectionInView } from '@/lib/hooks'
+import { motion } from 'framer-motion'
+import { useLanguage } from '@/context/language-context'
 import Image from 'next/image'
 import Profile from '@/public/profile.png'
 import SectionHeading from './section-heading'
-import { motion } from 'framer-motion'
-import { useSectionInView } from '@/lib/hooks'
+import enMessages from '@/messages/en.json'
+import zhMessages from '@/messages/zh.json'
 
 export default function About() {
 	const { ref } = useSectionInView('About')
+	const { language } = useLanguage()
+	const messages = { en: enMessages, zh: zhMessages }
+	const t = messages[language].about
 
 	return (
 		<motion.section
@@ -18,7 +24,7 @@ export default function About() {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.17 }}
 		>
-			<SectionHeading>About Me</SectionHeading>
+			<SectionHeading>{t.title}</SectionHeading>
 			<div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
 				<div className="flex-shrink-0">
 					<Image
@@ -28,26 +34,9 @@ export default function About() {
 					/>
 				</div>
 				<div className="text-left">
-					<p className="mb-3">
-						Hi, I'm Nikita Hsieh, a UI/UX designer and frontend developer with a
-						strong focus on user experience and interface design. With a
-						background in both design and technology, I specialize in bridging
-						the gap between visual thinking and functional execution.
-					</p>
-					<p className="mb-3">
-						My work includes system interfaces, platform tools, and backend
-						management dashboards. From understanding user needs and structuring
-						information to designing intuitive interfaces and turning them into
-						interactive products, I move confidently between design and
-						development.
-					</p>
-					<p>
-						I'm passionate about system-based applications and creating
-						experiences that are not only visually clear but also context-aware
-						and user-centered. By combining design thinking with frontend
-						capabilities, I aim to bring ideas to life in ways that are both
-						meaningful and practical.
-					</p>
+					<p className="mb-3">{t.paragraph1}</p>
+					<p className="mb-3">{t.paragraph2}</p>
+					<p>{t.paragraph3}</p>
 				</div>
 			</div>
 		</motion.section>

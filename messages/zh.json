@@ -6,9 +6,16 @@
 		"skills": "技能",
 		"projects": "作品"
 	},
+	"intro": {
+		"title": "嗨，我是 Nikita。",
+		"subtitle": "我是一名",
+		"animated": ["前端工程師", "UX/UI 設計師"]
+	},
 	"about": {
 		"title": "關於我",
-		"description": "我是一名前端開發者與設計師，來自台灣，擁有視覺藝術與 UI/UX 背景，專注於打造互動且美觀的網頁體驗。"
+		"paragraph1": "我是一名前端工程師與 UX/UI 設計師，具備設計與產品開發經驗，專注於打造響應式介面與具擴展性的元件系統，將設計思維實現為互動性高、易用的數位產品。",
+		"paragraph2": "熟悉 HTML、CSS、JavaScript，並積極參與前端開發流程，具備 React、Vue 的實作經驗，並運用 Sass、Tailwind、styled-components 等工具進行樣式開發與元件管理，亦熟悉 Git、API 串接等實務技能。",
+		"paragraph3": "透過設計背景，我能從使用者角度出發，掌握介面一致性與互動邏輯，優化整體體驗。我持續探索新技術與前端最佳實踐，致力於提升開發效率與產品品質，協助團隊在電商平台、大型專案與跨部門合作中實現更好的設計與開發整合。"
 	},
 	"skills": {
 		"title": "技能",
@@ -73,17 +80,25 @@
 		}
 	},
 	"projects": {
-		"corpComment": {
-			"title": "CorpComment",
-			"description": "一個全端開發的企業評價平台，用戶可公開發表對公司的評價。"
+		"invoice": {
+			"title": "發票管理系統",
+			"description": "使用 Vue 3 與 Firebase 建置的單頁應用，可建立、編輯、刪除發票並同步儲存。"
 		},
-		"rmtDev": {
-			"title": "rmtDev",
-			"description": "一個遠端工程職缺看板，具備篩選、排序與分頁功能。"
+		"jsModule": {
+			"title": "JavaScript 模組練習",
+			"description": "練習 JavaScript 模組化、陣列方法與 DOM 操作的模組化專案。"
 		},
-		"wordAnalytics": {
-			"title": "字數分析工具",
-			"description": "快速分析文字字數、字元數與社群貼文上限的應用工具。"
+		"saas": {
+			"title": "SaaS 登入頁面",
+			"description": "現代化 SaaS 網站首頁，具動畫效果、暗黑模式與語言切換功能。"
+		},
+		"shop": {
+			"title": "產品購物介面",
+			"description": "含購物車與側邊欄數量調整功能，結帳後會顯示購買成功通知。"
+		},
+		"film": {
+			"title": "電影探索器",
+			"description": "使用 OMDb API 建置的電影搜尋網站，支援響應式滑動排版與動態搜尋。"
 		}
 	}
 }
