@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { useLanguage } from '@/context/language-context'
 import enMessages from '@/messages/en.json'
 import zhMessages from '@/messages/zh.json'
@@ -10,7 +11,13 @@ import type { projectsData } from '@/lib/data'
 
 type ProjectProps = (typeof projectsData)[number]
 
-export default function Project({ id, tags, imageUrl, demoUrl }: ProjectProps) {
+export default function Project({
+	id,
+	tags,
+	imageUrl,
+	demoUrl,
+	githubUrl,
+}: ProjectProps) {
 	const ref = useRef<HTMLDivElement>(null)
 	const { scrollYProgress } = useScroll({
 		target: ref,
@@ -33,34 +40,64 @@ export default function Project({ id, tags, imageUrl, demoUrl }: ProjectProps) {
 		<motion.div
 			ref={ref}
 			style={{ scale, opacity }}
-			className="group mb-3 sm:mb-8 last:mb-0"
+			className="group mb-6 sm:mb-10 last:mb-0"
 		>
-			<a href={demoUrl} target="_blank" rel="noopener noreferrer">
-				<section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20">
-					<div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
-						<h3 className="text-2xl font-semibold">{title}</h3>
-						<p className="mt-2 leading-relaxed text-gray-700 dark:text-white">
-							{description}
-						</p>
-						<ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-							{tags.map((tag, index) => (
-								<li
-									key={index}
-									className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-								>
-									{tag}
-								</li>
-							))}
-						</ul>
+			<div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-10 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-white/10 rounded-2xl p-6 sm:p-8 transition hover:shadow-md">
+				<div className="flex-1">
+					<h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+						{title}
+					</h3>
+					<ul className="text-gray-700 dark:text-white/90 text-sm space-y-1 mb-4 leading-relaxed list-disc list-inside">
+						{description.split('\n').map((line, index) => (
+							<li key={index}>{line}</li>
+						))}
+					</ul>
+
+					<div className="flex flex-wrap gap-2 mb-4">
+						{tags.map((tag, index) => (
+							<span
+								key={index}
+								className="px-3 py-1 rounded-full bg-gray-200 dark:bg-zinc-700 text-xs font-medium text-gray-800 dark:text-white"
+							>
+								{tag}
+							</span>
+						))}
 					</div>
+
+					<div className="flex gap-4 mt-2">
+						<a
+							href={demoUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-2 px-4 py-2 rounded-md bg-zinc-800 text-white text-sm font-medium hover:bg-zinc-700 transition cursor-pointer"
+						>
+							<FaExternalLinkAlt className="text-base" />
+							Live Site
+						</a>
+
+						<a
+							href={githubUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-2 px-4 py-2 rounded-md border text-sm font-semibold transition cursor-pointer
+		bg-black/5 text-black border-black/30 hover:bg-black/10
+		dark:bg-white/5 dark:text-white/90 dark:border-white/30 dark:hover:bg-white/10 backdrop-blur-md"
+						>
+							<FaGithub className="text-base" />
+							GitHub
+						</a>
+					</div>
+				</div>
+
+				<div className="w-full sm:w-[300px]">
 					<Image
 						src={imageUrl}
 						alt={title}
 						quality={95}
-						className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04]"
+						className="w-full rounded-xl shadow-md transition group-hover:scale-[1.02]"
 					/>
-				</section>
-			</a>
+				</div>
+			</div>
 		</motion.div>
 	)
 }

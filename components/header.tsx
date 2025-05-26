@@ -32,9 +32,9 @@ export default function Header() {
 	return (
 		<header className="z-[999] relative">
 			<motion.div
-				className="fixed top-4 left-1/2 -translate-x-1/2 h-[3.25rem] w-[90%] max-w-[1200px]
+				className="fixed top-4 left-1/2 -translate-x-1/2 h-[3.25rem] w-[90%] max-w-[1200px] px-4 sm:px-8 flex items-center justify-between
   rounded-full border border-white border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] 
-  backdrop-blur-[0.5rem] dark:bg-gray-900 dark:border-none dark:bg-opacity-75"
+  backdrop-blur-[0.5rem] dark:bg-gray-800 dark:border-none dark:bg-opacity-80"
 			/>
 
 			<nav className="fixed top-4 left-1/2 -translate-x-1/2 h-[3.25rem] w-[90%] max-w-[1200px] flex items-center justify-between px-4">
@@ -44,7 +44,7 @@ export default function Header() {
 						setActiveSection('Home')
 						setTimeOfLastClick(Date.now())
 					}}
-					className="text-gray-800 font-semibold text-sm sm:text-base hover:text-gray-950 transition dark:text-gray-200 dark:hover:text-gray-300"
+					className="text-gray-800 font-semibold text-sm sm:text-base hover:text-gray-950 transition dark:text-gray-200 dark:hover:text-gray-300 px-4 py-2"
 				>
 					N.H.
 				</Link>
@@ -89,7 +89,7 @@ export default function Header() {
 						onClick={toggleLanguage}
 						className="w-8 text-center hover:text-gray-950 transition dark:hover:text-white"
 					>
-						{language === 'en' ? 'EN' : '中'}
+						{language === 'en' ? 'En' : '中'}
 					</button>
 
 					<button
