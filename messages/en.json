@@ -13,9 +13,10 @@
 	},
 	"about": {
 		"title": "About Me",
-		"paragraph1": "I'm a frontend engineer and UX/UI designer with experience in design and product development. I specialize in building responsive interfaces and scalable component systems that transform design concepts into interactive digital experiences.",
-		"paragraph2": "I'm proficient in HTML, CSS, and JavaScript, and actively contribute to frontend development workflows. I have hands-on experience with React and Vue, as well as styling tools like Sass, Tailwind, styled-components, GSAP, and Quasar. I'm also familiar with API integration and Git version control.",
-		"paragraph3": "With a background in design, I approach development from a user-centered perspective—ensuring visual consistency and intuitive experience logic. I enjoy exploring new technologies and best practices, continuously improving my frontend skills and bridging the gap between design and development. My work spans across e-commerce platforms, large-scale applications, and cross-functional team collaborations."
+		"paragraph1": "Hi, I'm a frontend developer and UX/UI designer who loves crafting clean, accessible, and user-centric web experiences. My work bridges design and development, with a strong focus on usability, performance, and visual clarity.",
+		"paragraph2": "In recent projects, I've been responsible for both the visual and frontend aspects of product development. I build responsive interfaces using Vue 3 and the Quasar framework, and I've also implemented system email features through Laravel. I specialize in turning design concepts into well-structured, maintainable code that supports a smooth user experience.",
+		"paragraph3": "I've contributed to a range of products, including CRM tools, digital twin platforms, IoT dashboards, and e-commerce websites. These experiences have deepened my understanding of how system logic connects to user behavior, and how thoughtful design can bridge that gap.",
+		"paragraph4": "I'm always eager to explore new tools, design systems, and technologies. I stay up-to-date with the latest trends in UX and frontend development, and I enjoy refining products by identifying user pain points and transforming feedback into meaningful improvements."
 	},
 	"skills": {
 		"title": "Skills",

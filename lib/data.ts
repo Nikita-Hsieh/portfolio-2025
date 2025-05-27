@@ -55,13 +55,14 @@ export const skillsGrouped = [
 			'Framer Motion',
 			'GSAP',
 			'SCSS',
+			'Laravel',
 			'style-component',
 			'Unity',
 		],
 	},
 	{
-		category: 'Tools',
-		items: ['Git', 'Vercel', 'Firebase', 'Jira', 'Trello'],
+		category: 'Dev Tools',
+		items: ['Git', 'Vercel', 'Firebase'],
 	},
 	{
 		category: 'Design',
@@ -75,6 +76,10 @@ export const skillsGrouped = [
 			'Miro',
 			'Wix',
 		],
+	},
+	{
+		category: 'Others',
+		items: ['Jira', 'Trello'],
 	},
 ] as const
 

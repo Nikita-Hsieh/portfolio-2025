@@ -25,19 +25,33 @@ export default function About() {
 			transition={{ delay: 0.17 }}
 		>
 			<SectionHeading>{t.title}</SectionHeading>
+
 			<div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
-				<div className="flex-shrink-0">
+				<motion.div
+					className="flex-shrink-0"
+					initial={{ opacity: 0, x: -50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.6 }}
+				>
 					<Image
 						src={Profile}
 						alt="profile image"
 						className="w-40 h-40 rounded-xl object-cover sm:w-48 sm:h-48"
 					/>
-				</div>
-				<div className="text-left">
+				</motion.div>
+
+				<motion.div
+					className="text-left text-gray-600 dark:text-gray-300"
+					initial={{ opacity: 0, x: 50 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					viewport={{ once: true }}
+					transition={{ duration: 0.6, delay: 0.2 }}
+				>
 					<p className="mb-3">{t.paragraph1}</p>
 					<p className="mb-3">{t.paragraph2}</p>
-					<p>{t.paragraph3}</p>
-				</div>
+					<p className="mb-3">{t.paragraph3}</p>
+					<p>{t.paragraph4}</p>
+				</motion.div>
 			</div>
 		</motion.section>
 	)

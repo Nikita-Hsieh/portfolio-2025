@@ -51,7 +51,7 @@ export default function Skills() {
 							{items.map((skill) => (
 								<li
 									key={skill}
-									className="rounded-full bg-white border border-black/10 px-3 py-1.5 text-gray-700 dark:bg-white/10 dark:text-white/80 hover:bg-white/50 dark:hover:bg-white/20 transition"
+									className="rounded-lg bg-white border border-black/10 px-3 py-1.5 text-gray-700 dark:bg-white/10 dark:text-white/80 hover:bg-white/50 dark:hover:bg-white/20 transition"
 								>
 									{skill}
 								</li>
