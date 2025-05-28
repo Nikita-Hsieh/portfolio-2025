@@ -19,17 +19,19 @@ export default function About() {
 		<motion.section
 			ref={ref}
 			id="about"
-			className="mb-28 max-w-[60rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+			className="mb-28 max-w-[60rem] text-center leading-8 sm:mb-40 scroll-mt-28 px-4 sm:px-6 mx-auto"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.17 }}
 		>
-			<SectionHeading>{t.title}</SectionHeading>
+			<SectionHeading>{messages[language].nav.about}</SectionHeading>
 
-			<div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+			<div
+				className="flex flex-col items-center gap-8 
+                lg:flex-row lg:items-center lg:justify-start"
+			>
 				<motion.div
-					className="flex-shrink-0"
-					initial={{ opacity: 0, x: -50 }}
+					className="flex-shrink-0 flex flex-col items-center lg:items-start"
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 				>
@@ -41,7 +43,7 @@ export default function About() {
 				</motion.div>
 
 				<motion.div
-					className="text-left text-gray-600 dark:text-gray-300"
+					className="text-left text-gray-600 dark:text-gray-400"
 					initial={{ opacity: 0, x: 50 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					viewport={{ once: true }}

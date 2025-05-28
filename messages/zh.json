@@ -4,7 +4,7 @@
 		"about": "關於我",
 		"experience": "經歷",
 		"skills": "技能",
-		"projects": "作品"
+		"projects": "專案"
 	},
 	"intro": {
 		"title": "嗨，我是 Nikita",
@@ -83,23 +83,23 @@
 	"projects": {
 		"invoice": {
 			"title": "發票管理系統",
-			"description": "使用 Vue 3 與 Firebase 建置的單頁應用，可建立、編輯、刪除發票並同步儲存。"
+			"description": "在這個發票管理應用中，使用者可以新增、編輯與刪除發票紀錄，所有資料都儲存在 Firebase 上"
 		},
 		"jsModule": {
-			"title": "JavaScript 模組練習",
-			"description": "練習 JavaScript 模組化、陣列方法與 DOM 操作的模組化專案。"
+			"title": "JavaScript 功能模組",
+			"description": "以原生 JavaScript 製作的功能模組，練習 DOM 操作、事件處理與邏輯設計，涵蓋 UI 互動與資料處理等常見情境。"
 		},
 		"saas": {
 			"title": "SaaS 登入頁面",
-			"description": "現代化 SaaS 網站首頁，具動畫效果、暗黑模式與語言切換功能。"
+			"description": "現代化 SaaS 登入頁面，採用 Next.js 與 Tailwind CSS 製作，結合動畫與響應式設計，具動畫效果、暗黑模式功能。"
 		},
 		"shop": {
-			"title": "產品購物介面",
-			"description": "含購物車與側邊欄數量調整功能，結帳後會顯示購買成功通知。"
+			"title": "產品購物網頁",
+			"description": "以 JavaScript 製作的購物車功能，右側欄可以編輯商品數量，支援商品加入、數量調整與結帳通知。"
 		},
 		"film": {
 			"title": "電影探索器",
-			"description": "使用 OMDb API 建置的電影搜尋網站，支援響應式滑動排版與動態搜尋。"
+			"description": "使用 OMDb API 建置的電影搜尋網站，具備響應式介面、Swiper 滑動排版與即時動態搜尋功能。"
 		}
 	}
 }

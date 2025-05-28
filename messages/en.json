@@ -1,7 +1,7 @@
 {
 	"nav": {
 		"home": "Home",
-		"about": "About",
+		"about": "About Me",
 		"experience": "Experience",
 		"skills": "Skills",
 		"projects": "Projects"
@@ -82,24 +82,24 @@
 	},
 	"projects": {
 		"invoice": {
-			"title": "Invoice Management App",
-			"description": "A Vue 3 SPA with Firebase. Create, edit, and delete invoice records with persistent sync."
+			"title": "Invoice App",
+			"description": "In this invoice app, users can create, edit, and delete invoice records. All data is stored in Firebase."
 		},
 		"jsModule": {
-			"title": "JS Module Practice",
-			"description": "Practice JavaScript modules, array methods, and DOM operations in a modular project."
+			"title": "JS Module",
+			"description": "This project showcases multiple functional modules built with vanilla JavaScript, focusing on DOM manipulation, event handling, and logic flow across UI and data interaction scenarios."
 		},
 		"saas": {
 			"title": "SaaS Landing Page",
-			"description": "A modern SaaS landing page with animation, dark mode, and language toggle."
+			"description": "A modern SaaS landing page built with Next.js and Tailwind CSS, featuring animations, dark mode, and a fully responsive layout."
 		},
 		"shop": {
-			"title": "Shop Products UI",
-			"description": "Shopping interface with cart, sidebar quantity control, and toast confirmation after checkout."
+			"title": "Shopping Website",
+			"description": "A shopping cart built with JavaScript, featuring a sidebar for editing item quantities, supporting product addition, quantity adjustment, and checkout confirmation."
 		},
 		"film": {
 			"title": "Film Explorer",
-			"description": "A responsive movie search app using OMDb API and a dynamic slider layout."
+			"description": "A responsive movie search site built with the OMDb API, featuring Swiper-based sliders and real-time dynamic search."
 		}
 	}
 }
