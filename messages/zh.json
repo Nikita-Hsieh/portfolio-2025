@@ -52,12 +52,21 @@
 		"graphicDesign": {
 			"title": "平面設計",
 			"location": "DeAnza 學院",
-			"description": "主修平面設計，熟悉 Adobe 系列軟體（Photoshop、Illustrator、InDesign）。"
+			"description": "累積視覺傳達設計經驗，並精通使用 Photoshop、Illustrator、InDesign 等 Adobe 工具進行創作。"
 		},
 		"ucsdVisualArt": {
-			"title": "視覺藝術 - 跨領域",
+			"title": "視覺藝術 – 跨領域",
 			"location": "加州大學聖地牙哥分校",
-			"description": "結合藝術與科技，將創意與邏輯融合於設計之中。"
+			"description": "探索藝術與科技的交會點，結合創意思維與技術實作，發展創新設計解決方案。",
+			"details": [
+				{
+					"title": "VR 作品（2018/08）",
+					"items": [
+						"My Surrealism（個人）: 運用 Unity3D、Google Blocks 與 C# 設計製作超現實虛擬環境。",
+						"Mind Constructed World（團隊）: 在 Unity 環境中製作虛擬體驗遊戲，應用遠端傳輸功能讓玩家穿梭於不同世界。"
+					]
+				}
+			]
 		},
 		"hunchTech": {
 			"title": "UI/UX 設計師",

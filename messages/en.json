@@ -51,13 +51,22 @@
 	"experience": {
 		"graphicDesign": {
 			"title": "Graphic Design",
-			"location": "DeAnza College",
-			"description": "Studied graphic design and became proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign)."
+			"location": "De Anza College",
+			"description": "Gained a strong foundation in visual communication and became proficient in Adobe Creative Suite, including Photoshop, Illustrator, and InDesign."
 		},
 		"ucsdVisualArt": {
-			"title": "Visual Arts - Interdisciplinary",
+			"title": "Visual Arts – Interdisciplinary",
 			"location": "UC San Diego",
-			"description": "Blended art and technology to approach design with creativity and precision."
+			"description": "Explored the intersection of art and technology, applying creative thinking and technical skills to develop innovative design solutions.",
+			"details": [
+				{
+					"title": "VR Projects (2018/08)",
+					"items": [
+						"My Surrealism (Individual): Designed a surreal virtual environment using Unity3D, Google Blocks, and C#.",
+						"Mind Constructed World (Team): Built a virtual experience game in Unity with remote transmission features, enabling players to navigate between worlds."
+					]
+				}
+			]
 		},
 		"hunchTech": {
 			"title": "UI/UX Designer",

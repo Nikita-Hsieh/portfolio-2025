@@ -17,7 +17,7 @@ export const experiencesData = [
 	},
 	{
 		id: 'ucsdVisualArt',
-		date: '2019',
+		date: '2017 - 2019',
 		icon: React.createElement(LuGraduationCap),
 		type: 'education',
 	},
