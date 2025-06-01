@@ -8,6 +8,14 @@ import saasImage from '@/public/saas-app.png'
 import shopImage from '@/public/shop-app.png'
 import filmImage from '@/public/film-app.png'
 
+export const links = [
+	{ name: 'Home', hash: '#home' },
+	{ name: 'About Me', hash: '#about' },
+	{ name: 'Experience', hash: '#experience' },
+	{ name: 'Skills', hash: '#skills' },
+	{ name: 'Projects', hash: '#projects' },
+] satisfies { name: string; hash: string }[]
+
 export const experiencesData = [
 	{
 		id: 'graphicDesign',
