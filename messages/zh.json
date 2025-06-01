@@ -20,7 +20,7 @@
 	},
 	"experience": {
 		"work": "工作經歷",
-		"education": "學歷歷程",
+		"education": "學習經歷",
 		"graphicDesign": {
 			"title": "平面設計",
 			"location": "DeAnza",
@@ -43,22 +43,44 @@
 		"hunchTech": {
 			"title": "UI/UX 設計師",
 			"location": "鴻啟科技",
-			"description": "負責 UI/UX 設計、遊戲介面設計、Wix 網站製作與 Firebase 串接。"
+			"intro": "負責UI設計、文案與 Wix 網頁製作。",
+			"details": [
+				"使用 Wix 設計 App 登陸頁，並透過 Firebase Hosting 發佈上線。",
+				"撰寫中英文文案與 App Store 上架素材。"
+			]
 		},
 		"nadiSystem": {
 			"title": "UI/UX 設計師",
 			"location": "杰西科技",
-			"description": "負責智慧工廠、智慧建築與電信相關專案介面設計，熟悉 Unity、Figma 與資料視覺化。"
+			"intro": "參與智慧建築、數據中心、數位孿生與後台管理系統等專案，負責介面設計、數據視覺化、互動動態設計與原型製作。",
+			"details": [
+				"【遠傳 5G 電信網絡案】負責 UI/UX 設計與資料視覺化，使用 Unity 進行切版並製作互動式資料圖表，並設計後台編輯管理系統。",
+				"【富士康威州案】負責智慧工廠 UI/UX 設計與數據視覺化，使用 Unity 與 Figma 建構介面並製作互動原型。",
+				"【國泰世華銀行數據中心】負責 UI/UX 設計與資料視覺化，使用 Unity 製作具動態與互動效果的介面。",
+				"【巨大總部】參與智慧建築系統的 UI/UX 設計，使用 Figma 規劃介面結構，並以 Unity 製作具互動效果的視覺化介面。",
+				"【台達電上海遠東案】參與智慧建築平台的 UI/UX 設計，負責數據設計與資料視覺化規劃。"
+			]
 		},
 		"rogersAI": {
 			"title": "UI/UX 設計師",
 			"location": "羅傑斯人工智能",
-			"description": "設計內部工具與 AI 介面，進行使用者測試與互動原型開發。"
+			"intro": "負責 3D 人臉識別系統與 IoT 後台管理平台的 UI/UX 設計，並參與多項相關專案，涵蓋資訊架構、元件模組與互動流程規劃。",
+			"details": [
+				"進行可用性測試與 A/B 測試，持續優化使用者流程。",
+				"設計元件系統與模組，並提供清晰的 Figma 規格。",
+				"建立互動原型，驗證使用流程與設計假設。"
+			]
 		},
 		"woWorld": {
 			"title": "UI/UX 與前端開發",
-			"location": "窩窩科技行銷有限科技",
-			"description": "開發響應式前端模組，優化電商平台介面與使用體驗。"
+			"location": "窩窩科技行銷有限公司",
+			"intro": "參與電商平台的 UI/UX 設計與前端開發，提升整體使用者體驗。",
+			"details": [
+				"使用 Vue 3 與 Quasar 開發可重複使用的前端模組並進行切版。",
+				"參與 UI/UX 設計與登入頁介面製作。",
+				"依據 A/B 測試結果優化操作流程與使用體驗。",
+				"使用 Laravel 製作系統信件模組。"
+			]
 		}
 	},
 	"projects": {

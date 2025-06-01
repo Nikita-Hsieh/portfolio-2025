@@ -74,7 +74,7 @@ export default function Experience() {
 		<section
 			ref={ref}
 			id="experience"
-			className="scroll-mt-[120px] mb-28 sm:mb-40"
+			className="scroll-mt-[120px] mb-28 sm:mb-40 px-4 max-w-4xl mx-auto text-left"
 		>
 			<SectionHeading>{messages[language].nav.experience}</SectionHeading>
 
@@ -90,8 +90,12 @@ export default function Experience() {
 					.map((item, index) => {
 						const exp = expMessages[item.id]
 						return (
-							<div
+							<motion.div
 								key={`work-${index}`}
+								initial={{ opacity: 0, y: 50 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.5, delay: index * 0.1 }}
+								viewport={{ once: true, amount: 0.3 }}
 								className="relative rounded-xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 p-6 shadow-sm transition-colors"
 							>
 								<span className="absolute top-4 right-6 text-gray-500 dark:text-gray-400 border border-black/10 dark:border-white/10 rounded-full py-1 px-2 text-xs">
@@ -104,10 +108,23 @@ export default function Experience() {
 								<p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
 									{exp.location}
 								</p>
-								<p className="text-sm mt-2 text-gray-700 dark:text-white/70 leading-relaxed">
-									{exp.description}
-								</p>
-							</div>
+
+								{exp.intro && (
+									<p className="text-sm mt-2 text-gray-700 dark:text-white/70 leading-relaxed">
+										{exp.intro}
+									</p>
+								)}
+
+								{Array.isArray(exp.details) && exp.details.length > 0 && (
+									<div className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-lg px-5 py-4 mt-4">
+										<ul className="list-disc list-outside pl-5 text-sm text-gray-800 dark:text-white/80 leading-relaxed space-y-2">
+											{exp.details.map((item: string, i: number) => (
+												<li key={i}>{item}</li>
+											))}
+										</ul>
+									</div>
+								)}
+							</motion.div>
 						)
 					})}
 			</div>

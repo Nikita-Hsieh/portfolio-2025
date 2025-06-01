@@ -43,22 +43,44 @@
 		"hunchTech": {
 			"title": "UI/UX Designer",
 			"location": "HunchTech",
-			"description": "Worked on UI/UX design, game interfaces, web creation with Wix, and Firebase integration."
+			"intro": "Focused on UI/UX design, copywriting and website creation publishing by wix.",
+			"details": [
+				"Designed and published app landing pages using Wix and Firebase Hosting.",
+				"Wrote bilingual copy and App Store listing materials."
+			]
 		},
 		"nadiSystem": {
 			"title": "UI/UX Designer",
 			"location": "NADI System Corp.",
-			"description": "Led smart factory, smart building, and telecom UI projects with Unity, Figma, and data dashboards."
+			"intro": "Worked on projects including smart building systems, data centers, digital twin platforms, and backend management tools, focusing on interface design, data visualization, interactive motion design, and prototyping.",
+			"details": [
+				"【FarEasTone 5G Telecom Project】Responsible for UI/UX design and data visualization, using Unity to build layouts, create interactive charts, and design a backend editing system.",
+				"【Foxconn Wisconsin Project】Responsible for UI/UX and data visualization in a smart factory system, using Unity and Figma to build interfaces and create interactive prototypes.",
+				"【Cathay United Bank Data Center】Responsible for UI/UX design and data visualization, using Unity to create animated and interactive interfaces.",
+				"【Giant Headquarters】Contributed to UI/UX design for a smart building system, using Figma to plan interface structure and Unity to create interactive visual components.",
+				"【Delta Shanghai Project】Contributed to UI/UX design for a smart building platform, focusing on data design and visualization planning."
+			]
 		},
 		"rogersAI": {
 			"title": "UI/UX Designer",
 			"location": "RogersAI",
-			"description": "Designed internal tools and AI interfaces, ran usability testing and prototyped user flows."
+			"intro": "Responsible for UI/UX design of a 3D facial recognition system and IoT-based backend platform, along with several related projects, covering information architecture, component systems, and interaction flows.",
+			"details": [
+				"Conducted usability testing and A/B testing to optimize user flows.",
+				"Designed component systems and modules, providing clear Figma specifications.",
+				"Created interactive prototypes to validate user flows and design hypotheses."
+			]
 		},
 		"woWorld": {
 			"title": "UI/UX & Frontend Developer",
-			"location": "WoWorld",
-			"description": "Developed responsive frontend modules and contributed to UI/UX improvements in e-commerce workflows."
+			"location": "WoWorld Marketing Co., Ltd.",
+			"intro": "Worked on UI/UX design and frontend development for an e-commerce platform to improve the overall user experience.",
+			"details": [
+				"Developed reusable frontend components and layouts using Vue 3 and Quasar.",
+				"Participated in UI/UX design and implemented the login page interface.",
+				"Optimized user flows and interactions based on A/B testing results.",
+				"Created system email modules using Laravel."
+			]
 		}
 	},
 	"projects": {
