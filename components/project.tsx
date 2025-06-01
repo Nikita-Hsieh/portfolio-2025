@@ -46,7 +46,8 @@ export default function Project({
 			className="h-[80vh] sticky top-[75px] flex items-center justify-center"
 		>
 			<div
-				className="relative w-full max-w-[1000px] rounded-[25px] p-6 sm:p-10 flex flex-col bg-white dark:bg-slate-800 shadow-md border dark:border-white/10 transition overflow-hidden
+				className="relative w-full max-w-[1000px] rounded-[25px] p-6 sm:p-10 flex flex-col bg-white dark:bg-slate-800 shadow-md border 
+				dark:border-white/10 transition overflow-hidden
 		min-h-[700px] lg:min-h-[500px]"
 			>
 				<h2 className="text-center text-[24px] text-zinc-900 dark:text-white font-bold whitespace-nowrap min-h-[32px]">

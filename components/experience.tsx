@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import SectionHeading from './section-heading'
 import {
 	VerticalTimeline,
@@ -13,6 +13,54 @@ import { useTheme } from '@/context/theme-context'
 import { useLanguage } from '@/context/language-context'
 import en from '@/messages/en.json'
 import zh from '@/messages/zh.json'
+import { motion, AnimatePresence } from 'framer-motion'
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi'
+
+function SectionDetail({
+	section,
+}: {
+	section: { title: string; items: string[] }
+}) {
+	const [hovered, setHovered] = useState(false)
+	const [clicked, setClicked] = useState(false)
+	const shouldShow = hovered || clicked
+
+	return (
+		<div
+			className="group border-gray-300 dark:border-white/20 pl-4 rounded-md transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-white/10"
+			onMouseEnter={() => setHovered(true)}
+			onMouseLeave={() => setHovered(false)}
+		>
+			<button
+				type="button"
+				onClick={() => setClicked((prev) => !prev)}
+				className="w-full text-sm font-semibold text-left text-gray-800 dark:text-white focus:outline-none flex items-center justify-between"
+			>
+				<span>{section.title}</span>
+				<span className="ml-2 text-gray-400 text-base transition-transform duration-300">
+					{shouldShow ? <FiChevronUp /> : <FiChevronDown />}
+				</span>
+			</button>
+
+			<AnimatePresence initial={false}>
+				{shouldShow && (
+					<motion.div
+						initial={{ opacity: 0, height: 0 }}
+						animate={{ opacity: 1, height: 'auto' }}
+						exit={{ opacity: 0, height: 0 }}
+						transition={{ duration: 0.25 }}
+					>
+						<ul className="list-disc list-inside text-sm text-gray-600 dark:text-white/70 mt-2 space-y-1">
+							{section.items.map((line, i) => (
+								<li key={i}>{line}</li>
+							))}
+						</ul>
+					</motion.div>
+				)}
+			</AnimatePresence>
+		</div>
+	)
+}
 
 export default function Experience() {
 	const { ref } = useSectionInView('Experience', 0.3)
@@ -31,7 +79,10 @@ export default function Experience() {
 			<SectionHeading>{messages[language].nav.experience}</SectionHeading>
 
 			{/* Work */}
-			<h3 className="text-xl font-bold mt-10 mb-4">Working Experience</h3>
+			<span className="inline-block border border-blue-300 bg-blue-50 dark:border-blue-400/30 dark:bg-blue-500/10 text-blue-700 dark:text-blue-100 text-sm font-normal px-4 py-1 rounded-full mt-10 mb-4">
+				{messages[language].experience.work}
+			</span>
+
 			<div className="flex flex-col gap-6 md:grid-cols-2">
 				{experiencesData
 					.filter((item) => item.type === 'work')
@@ -62,7 +113,10 @@ export default function Experience() {
 			</div>
 
 			{/* Education */}
-			<h3 className="text-xl font-bold mt-16 mb-4">Education Journey</h3>
+			<span className="inline-block border border-green-300 bg-green-50 dark:border-green-400/30 dark:bg-green-500/10 text-green-700 dark:text-green-100 text-sm font-normal px-4 py-1 rounded-full mt-16 mb-4">
+				{messages[language].experience.education}
+			</span>
+
 			<VerticalTimeline lineColor="">
 				{experiencesData
 					.filter((item) => item.type === 'education')
@@ -83,6 +137,7 @@ export default function Experience() {
 											: '1px solid rgba(255, 255, 255, 0.1)',
 									textAlign: 'left',
 									padding: '1.3rem 2rem',
+									maxWidth: '900px',
 								}}
 								contentArrowStyle={{
 									borderRight:
@@ -109,20 +164,9 @@ export default function Experience() {
 								{'details' in exp &&
 									Array.isArray(exp.details) &&
 									exp.details.length > 0 && (
-										<div className="mt-4 border-l-2 border-gray-300 dark:border-white/20 pl-4 space-y-4">
-											{(
-												exp.details as { title: string; items: string[] }[]
-											).map((section, i) => (
-												<div key={i}>
-													<p className="text-sm font-semibold text-gray-800 dark:text-white">
-														{section.title}
-													</p>
-													<ul className="list-disc list-inside text-sm text-gray-600 dark:text-white/70 mt-1 space-y-1">
-														{section.items.map((line, j) => (
-															<li key={j}>{line}</li>
-														))}
-													</ul>
-												</div>
+										<div className="mt-6 space-y-6 px-4 py-3 rounded-lg border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/5">
+											{exp.details.map((section, i) => (
+												<SectionDetail key={i} section={section} />
 											))}
 										</div>
 									)}

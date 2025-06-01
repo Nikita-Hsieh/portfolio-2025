@@ -16,48 +16,20 @@
 		"paragraph1": "嗨，我是一位前端開發者與 UX/UI 設計師，熱衷於打造乾淨、易用且以使用者為中心的網頁體驗。我的工作結合設計與開發，特別注重易用性、效能與視覺清晰度。",
 		"paragraph2": "在近期的專案中，我同時負責產品的視覺設計與前端開發。我使用 Vue 3 和 Quasar 框架建構響應式介面，也曾透過 Laravel 開發系統信件功能。我擅長將設計概念轉化為結構清晰、易於維護的程式碼，確保整體使用體驗順暢一致。",
 		"paragraph3": "我參與過各類型產品設計，包括後台管理系統、數位攣生、物聯網，以及電商網站。這些經驗深化了我對系統邏輯與使用者行為之間關聯的理解，也讓我更能以設計作為橋樑，串聯技術與需求。",
-		"paragraph4": "我始終保持對新工具、設計系統與技術趨勢的好奇與探索。我喜歡透過使用者回饋找出產品的痛點，並將這些洞察轉化為具體、可持續的優化方案。"
-	},
-	"skills": {
-		"title": "技能",
-		"list": [
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"Vue3",
-			"React",
-			"Quasar",
-			"Tailwind",
-			"Framer Motion",
-			"Scss",
-			"styled-components",
-			"gsap",
-			"Firebase",
-			"Unity",
-			"Git",
-			"Figma",
-			"Wix",
-			"Whimsical",
-			"Photoshop",
-			"Draw.io",
-			"Sketch",
-			"Zeplin",
-			"Miro",
-			"Trello",
-			"Jira",
-			"GraphQL"
-		]
+		"paragraph4": "我始終保持對新工具、設計系統與技術趨勢的好奇與探索也喜歡透過使用者反饋找出產品的痛點，持續優化迭代產品。"
 	},
 	"experience": {
+		"work": "工作經歷",
+		"education": "學歷歷程",
 		"graphicDesign": {
 			"title": "平面設計",
-			"location": "DeAnza 學院",
+			"location": "DeAnza",
 			"description": "累積視覺傳達設計經驗，並精通使用 Photoshop、Illustrator、InDesign 等 Adobe 工具進行創作。"
 		},
 		"ucsdVisualArt": {
-			"title": "視覺藝術 – 跨領域",
+			"title": "視覺藝術 – 交叉學科電腦與藝術",
 			"location": "加州大學聖地牙哥分校",
-			"description": "探索藝術與科技的交會點，結合創意思維與技術實作，發展創新設計解決方案。",
+			"description": "結合創意發想與技術實作，探索藝術與科技之間的交互，並在過程中培養解決問題的能力，累積跨領域解決問題的經驗",
 			"details": [
 				{
 					"title": "VR 作品（2018/08）",
@@ -70,22 +42,22 @@
 		},
 		"hunchTech": {
 			"title": "UI/UX 設計師",
-			"location": "HunchTech",
+			"location": "鴻啟科技",
 			"description": "負責 UI/UX 設計、遊戲介面設計、Wix 網站製作與 Firebase 串接。"
 		},
 		"nadiSystem": {
 			"title": "UI/UX 設計師",
-			"location": "能達科技",
+			"location": "杰西科技",
 			"description": "負責智慧工廠、智慧建築與電信相關專案介面設計，熟悉 Unity、Figma 與資料視覺化。"
 		},
 		"rogersAI": {
 			"title": "UI/UX 設計師",
-			"location": "RogersAI",
+			"location": "羅傑斯人工智能",
 			"description": "設計內部工具與 AI 介面，進行使用者測試與互動原型開發。"
 		},
 		"woWorld": {
 			"title": "UI/UX 與前端開發",
-			"location": "WoWorld",
+			"location": "窩窩科技行銷有限科技",
 			"description": "開發響應式前端模組，優化電商平台介面與使用體驗。"
 		}
 	},

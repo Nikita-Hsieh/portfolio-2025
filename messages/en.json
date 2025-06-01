@@ -18,44 +18,16 @@
 		"paragraph3": "I've contributed to a range of products, including CRM tools, digital twin platforms, IoT dashboards, and e-commerce websites. These experiences have deepened my understanding of how system logic connects to user behavior, and how thoughtful design can bridge that gap.",
 		"paragraph4": "I'm always eager to explore new tools, design systems, and technologies. I stay up-to-date with the latest trends in UX and frontend development, and I enjoy refining products by identifying user pain points and transforming feedback into meaningful improvements."
 	},
-	"skills": {
-		"title": "Skills",
-		"list": [
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"Vue3",
-			"React",
-			"Quasar",
-			"Tailwind",
-			"Framer Motion",
-			"Scss",
-			"styled-components",
-			"gsap",
-			"Firebase",
-			"Unity",
-			"Git",
-			"Figma",
-			"Wix",
-			"Whimsical",
-			"Photoshop",
-			"Draw.io",
-			"Sketch",
-			"Zeplin",
-			"Miro",
-			"Trello",
-			"Jira",
-			"GraphQL"
-		]
-	},
 	"experience": {
+		"work": "Working Experience",
+		"education": "Education Journey",
 		"graphicDesign": {
 			"title": "Graphic Design",
 			"location": "De Anza College",
 			"description": "Gained a strong foundation in visual communication and became proficient in Adobe Creative Suite, including Photoshop, Illustrator, and InDesign."
 		},
 		"ucsdVisualArt": {
-			"title": "Visual Arts – Interdisciplinary",
+			"title": "Visual Arts – Interdisciplinary Computer & Art",
 			"location": "UC San Diego",
 			"description": "Explored the intersection of art and technology, applying creative thinking and technical skills to develop innovative design solutions.",
 			"details": [

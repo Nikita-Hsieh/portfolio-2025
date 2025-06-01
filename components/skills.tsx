@@ -4,6 +4,9 @@ import SectionHeading from './section-heading'
 import { skillsGrouped } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
+import { useLanguage } from '@/context/language-context'
+import en from '@/messages/en.json'
+import zh from '@/messages/zh.json'
 
 const fadeInGroup = (index: number) => ({
 	initial: { opacity: 0, y: 60 },
@@ -20,6 +23,10 @@ const fadeInGroup = (index: number) => ({
 
 export default function Skills() {
 	const { ref } = useSectionInView('Skills')
+	const { language } = useLanguage()
+
+	const messages = { en, zh }
+	const expMessages = messages[language].experience
 
 	return (
 		<section
@@ -27,7 +34,7 @@ export default function Skills() {
 			id="skills"
 			className="relative mb-28 max-w-4xl scroll-mt-28 text-left sm:mb-40 px-4"
 		>
-			<SectionHeading>Skills</SectionHeading>
+			<SectionHeading>{messages[language].nav.skills}</SectionHeading>
 
 			<div className="mt-10 grid grid-cols-1 sm:grid-cols-[minmax(auto,_max-content)_1fr] gap-y-6 gap-x-8 text-sm sm:text-base transition-all duration-300">
 				{skillsGrouped.map(({ category, items }, groupIndex) => (
