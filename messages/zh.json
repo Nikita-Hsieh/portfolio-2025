@@ -9,7 +9,8 @@
 	"intro": {
 		"title": "嗨，我是 Nikita",
 		"subtitle": "我是一名",
-		"animated": ["前端工程師", "UX/UI 設計師"]
+		"animated": ["前端工程師", "UX/UI 設計師"],
+		"viewProjects": "查看專案"
 	},
 	"about": {
 		"title": "關於我",

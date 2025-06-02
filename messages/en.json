@@ -9,7 +9,8 @@
 	"intro": {
 		"title": "Hi, I'm Nikita.",
 		"subtitle": "I am a",
-		"animated": ["Frontend Developer", "UX/UI Designer"]
+		"animated": ["Frontend Developer", "UX/UI Designer"],
+		"viewProjects": "View Projects"
 	},
 	"about": {
 		"title": "About Me",
